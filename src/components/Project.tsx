@@ -30,6 +30,10 @@ const projects: ProjectItem[] = [
     description:
       "Developed a computer-network simulation for communication between a lunar rover and an Earth station. Modelled long-distance delay, jitter, packet loss, and corruption, and implemented UDP-based channels for commands, acknowledgements, sensor data, and video streaming.",
   },
+  {
+    title: "Voice-Enabled AI Chatbot", 
+    description : "Developed an AI-powered conversational chatbot using LangChain and a large language model. Integrated speech-to-text and text-to-speech capabilities, allowing users to interact with the chatbot through both voice and text. The system processes user queries, generates context-aware responses, and converts the responses into audio for a natural voice-based conversational experience."
+  },
 ];
 
 function Project() {

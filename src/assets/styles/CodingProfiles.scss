@@ -1,0 +1,117 @@
+.coding-profiles-section {
+  width: 100%;
+  padding: 70px 0;
+  box-sizing: border-box;
+}
+
+.coding-profiles-inner {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  h1 {
+    margin: 0 0 35px;
+    color: #ffffff;
+    font-size: 2.5rem;
+  }
+}
+
+.heatmap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.heatmap-card {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #6438a8;
+  border-radius: 14px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  h2 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 1.7rem;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+  }
+}
+
+.leetcode-card {
+  background-color: #1c1c1c;
+}
+
+.leetcode-heatmap {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+}
+
+.github-card {
+  background-color: #1c1c1c;
+}
+
+.github-image-wrapper {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.github-heatmap {
+  display: block;
+  width: 100%;
+  min-width: 750px;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .coding-profiles-section {
+    padding: 45px 0;
+  }
+
+  .coding-profiles-inner {
+    width: 92%;
+
+    h1 {
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+  }
+
+  .heatmap-card {
+    padding: 16px;
+
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .leetcode-heatmap {
+    min-width: 650px;
+  }
+
+  .leetcode-card {
+    overflow-x: auto;
+  }
+
+  .github-image-wrapper {
+    padding: 12px;
+  }
+
+  .github-heatmap {
+    min-width: 700px;
+  }
+}
