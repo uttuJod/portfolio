@@ -1,0 +1,158 @@
+#contact {
+  width: 100%;
+  box-sizing: border-box;
+
+  .items-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.contact_wrapper {
+  width: 100%;
+  box-sizing: border-box;
+
+  h1 {
+    color: #ffffff;
+  }
+}
+
+.contact-description {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 1.1rem;
+  line-height: 1.5;
+
+  svg {
+    flex-shrink: 0;
+    color: #ffffff;
+    font-size: 1.25rem;
+  }
+
+  span {
+    color: #ffffff;
+  }
+}
+
+a.contact-item {
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+  }
+}
+
+.phone-numbers {
+  flex-wrap: wrap;
+
+  a {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.75;
+      text-decoration: underline;
+    }
+  }
+}
+
+.phone-divider {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contact-form {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 15px;
+
+  .MuiOutlinedInput-root {
+    background-color: #ffffff;
+  }
+
+  .MuiInputBase-input {
+    color: #111111 !important;
+    -webkit-text-fill-color: #111111 !important;
+  }
+
+  textarea {
+    color: #111111 !important;
+    -webkit-text-fill-color: #111111 !important;
+  }
+
+  .MuiInputBase-input::placeholder,
+  textarea::placeholder {
+    color: #666666 !important;
+    opacity: 1;
+  }
+
+  .MuiFormHelperText-root {
+    color: #ff7777;
+    margin-left: 0;
+  }
+}
+
+.form-flex {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+}
+
+.send-button {
+  float: right;
+  margin-top: 18px !important;
+  background-color: #ffffff !important;
+  color: #050f0b !important;
+}
+
+.send-button:hover {
+  background-color: #5000ca !important;
+  color: #ffffff !important;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-description {
+    font-size: 1rem;
+  }
+
+  .contact-item {
+    font-size: 0.95rem;
+  }
+
+  .form-flex {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-numbers {
+    align-items: flex-start;
+  }
+
+  .send-button {
+    width: 100%;
+    float: none;
+  }
+}
